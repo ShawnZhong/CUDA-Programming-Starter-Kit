@@ -1,0 +1,97 @@
+//===----------------------------------------------------------------------===//
+//
+// Part of the CUDA Toolkit, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+#ifndef __cuda_std__
+#define __cuda_std__
+
+#ifdef __CUDACC__
+    #if defined(__clang__)
+        #include <cuda_fp16.h>
+        #define __fp16 __half
+    #endif
+    #if defined(__FLT16_MANT_DIG__)
+        #include <cuda_fp16.h>
+        #define _Float16 __half
+    #endif
+#else
+    #define __host__
+    #define __device__
+#endif
+
+#ifdef _MSC_VER
+    #undef __cpp_lib_transparent_operators
+#endif
+
+// request these outcomes
+#define _LIBCUDACXX_NO_AUTO_LINK
+#ifndef _LIBCUDACXX_NO_EXCEPTIONS
+    #define _LIBCUDACXX_NO_EXCEPTIONS
+#endif
+#ifndef _LIBCUDACXX_NO_RTTI
+    #define _LIBCUDACXX_NO_RTTI
+#endif
+#define _LIBCUDACXX_HAS_NO_INT128
+#define _LIBCUDACXX_FREESTANDING
+#ifdef __CUDACC_RTC__
+    #define __ELF__
+    #define _LIBCUDACXX_HAS_NO_PRAGMA_SYSTEM_HEADER
+    #define _LIBCUDACXX_HAS_THREAD_API_EXTERNAL
+    #define __alignof(x) alignof(x)
+#endif
+#define _LIBCUDACXX_HAS_EXTERNAL_ATOMIC_IMP
+
+#if defined(__PGIC__) && defined(__linux__)
+    #define __ELF__
+#endif
+
+#include "libcxx/include/__config"
+
+#if _GNUC_VER <= 409
+    #define _LIBCUDACXX_CUDA_HAS_NO_HOST_STD_ATOMIC_INIT
+#endif
+
+// force this outcome
+#undef _LIBCUDACXX_ATOMIC_FLAG_TYPE
+#define _LIBCUDACXX_ATOMIC_FLAG_TYPE int
+#undef _LIBCUDACXX_INLINE_VISIBILITY
+#define _LIBCUDACXX_INLINE_VISIBILITY __host__ __device__
+
+#ifndef _LIBCUDACXX_ABI_UNSTABLE
+#  define _LIBCUDACXX_ABI_UNSTABLE
+#endif
+
+#ifndef _LIBCUDACXX_CUDA_ABI_VERSION
+#  define _LIBCUDACXX_CUDA_ABI_VERSION 1
+#endif
+
+#ifndef _LIBCUDACXX_CUDA_ABI_NAMESPACE
+#  define _LIBCUDACXX_CUDA_ABI_NAMESPACE _LIBCUDACXX_CONCAT(__,_LIBCUDACXX_CUDA_ABI_VERSION)
+#endif
+
+#ifndef _LIBCUDACXX_BEGIN_NAMESPACE_CUDA
+#  define _LIBCUDACXX_BEGIN_NAMESPACE_CUDA \
+      namespace cuda { inline namespace _LIBCUDACXX_CUDA_ABI_NAMESPACE {
+#endif
+#ifndef _LIBCUDACXX_END_NAMESPACE_CUDA
+#  define _LIBCUDACXX_END_NAMESPACE_CUDA } }
+#endif
+
+// redefine namespace std::
+#undef _LIBCUDACXX_BEGIN_NAMESPACE_STD
+#define _LIBCUDACXX_BEGIN_NAMESPACE_STD \
+  namespace cuda { namespace std { inline namespace _LIBCUDACXX_CUDA_ABI_NAMESPACE {
+#undef _LIBCUDACXX_END_NAMESPACE_STD
+#define _LIBCUDACXX_END_NAMESPACE_STD } } }
+#undef _CUDA_VSTD
+#define _CUDA_VSTD cuda::std::_LIBCUDACXX_CUDA_ABI_NAMESPACE
+#undef _LIBCUDACXX_BEGIN_NAMESPACE_STD_NOVERSION
+#define _LIBCUDACXX_BEGIN_NAMESPACE_STD_NOVERSION namespace cuda { namespace std {
+#undef _LIBCUDACXX_END_NAMESPACE_STD_NOVERSION
+#define _LIBCUDACXX_END_NAMESPACE_STD_NOVERSION } }
+
+#endif //__cuda_std__

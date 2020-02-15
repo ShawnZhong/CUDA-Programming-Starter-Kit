@@ -1,0 +1,23 @@
+{
+    "env": {
+        "cudaIncludePath": "${workspaceFolder}/includes/CUDA-10.2",
+        "libcxxInlucdePath": "${cudaIncludePath}/cuda/std/detail/libcxx/include"
+    },
+    "configurations": [{
+        "name": "CUDA",
+        "defines": [
+            "__CUDACC__"
+        ],
+        "includePath": [
+            "${cudaIncludePath}",
+            "${libcxxInlucdePath}"
+        ],
+        "forcedInclude": [
+            "${libcxxInlucdePath}/cstdlib",
+            "${cudaIncludePath}/cuda_runtime_api.h",
+            "${cudaIncludePath}/device_launch_parameters.h",
+            "${cudaIncludePath}/device_functions.h"
+        ]
+    }],
+    "version": 4
+}
