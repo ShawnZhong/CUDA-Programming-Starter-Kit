@@ -45,7 +45,7 @@ __global__ void dynamicReverse(int *d, int n) {
 }
 
 int main(void) {
-  const int n = atoi("19");
+  const int n = 64;
   int a[n], r[n], d[n];
 
   for (int i = 0; i < n; i++) {
