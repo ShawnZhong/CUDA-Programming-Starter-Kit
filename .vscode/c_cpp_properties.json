@@ -14,7 +14,7 @@
             "includePath": [
                 "${workspaceFolder}/include/ginclude-9.2.0",
                 "${glibcInlucdePath}/include",
-                "${glibcInlucdePath}/generic",
+                "${glibcInlucdePath}/sysdeps/generic",
                 "${glibcInlucdePath}/sysdeps/x86",
                 "${glibcInlucdePath}/sysdeps/x86_64",
                 "${glibcInlucdePath}",
