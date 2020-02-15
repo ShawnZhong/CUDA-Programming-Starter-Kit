@@ -1,7 +1,8 @@
 {
     "env": {
         "cudaIncludePath": "${workspaceFolder}/include/CUDA-10.2",
-        "libcxxInlucdePath": "${cudaIncludePath}/cuda/std/detail/libcxx/include"
+        "libcxxInlucdePath": "${cudaIncludePath}/cuda/std/detail/libcxx/include",
+        "glibcInlucdePath": "${workspaceFolder}/include/glibc-2.31"
     },
     "configurations": [
         {
@@ -12,11 +13,11 @@
             ],
             "includePath": [
                 "${workspaceFolder}/include/ginclude-9.2.0",
-                "${workspaceFolder}/include/glibc-2.31/include",
-                "${workspaceFolder}/include/glibc-2.31/sysdeps/generic",
-                "${workspaceFolder}/include/glibc-2.31/sysdeps/x86",
-                "${workspaceFolder}/include/glibc-2.31/sysdeps/x86_64",
-                "${workspaceFolder}/include/glibc-2.31",
+                "${glibcInlucdePath}/include",
+                "${glibcInlucdePath}/generic",
+                "${glibcInlucdePath}/sysdeps/x86",
+                "${glibcInlucdePath}sysdeps/x86_64",
+                "${glibcInlucdePath}",
                 "${libcxxInlucdePath}",
                 "${cudaIncludePath}"
             ],
