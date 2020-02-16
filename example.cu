@@ -24,7 +24,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <stdio.h>
+#include <cstdio>
 
 __global__ void staticReverse(int *d, int n) {
   __shared__ int s[64];
@@ -44,7 +44,7 @@ __global__ void dynamicReverse(int *d, int n) {
   d[t] = s[tr];
 }
 
-int main(void) {
+int main() {
   const int n = 64;
   int a[n], r[n], d[n];
 

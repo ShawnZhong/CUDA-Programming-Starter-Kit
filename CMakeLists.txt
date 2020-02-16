@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.16)
+project(CUDA_Progrsamming_Starter_Kit)
+
+set(CUDA_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include/CUDA-10.2")
+add_definitions(-include cstdlib)
+add_definitions(-include ${CUDA_INCLUDE_DIR}/cuda_runtime_api.h)
+add_definitions(-include ${CUDA_INCLUDE_DIR}/device_launch_parameters.h)
+add_definitions(-include ${CUDA_INCLUDE_DIR}/device_functions.h)
+include_directories(${CUDA_INCLUDE_DIR})
+add_compile_definitions(__CUDACC__)
+
+add_executable(example example.cu)
+set_source_files_properties(example.cu PROPERTIES LANGUAGE CXX)
+set_target_properties(example PROPERTIES LINKER_LANGUAGE CXX)
