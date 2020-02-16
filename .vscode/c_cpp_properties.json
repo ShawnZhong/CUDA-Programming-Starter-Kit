@@ -2,7 +2,7 @@
     "env": {
         "cudaIncludePath": "${workspaceFolder}/include/CUDA-10.2",
         "libcxxInlucdePath": "${cudaIncludePath}/cuda/std/detail/libcxx/include",
-        "glibcInlucdePath": "${workspaceFolder}/include/glibc-2.31"
+        "libcInlucdePath": "${workspaceFolder}/include/musl-libc-1.1.24"
     },
     "configurations": [
         {
@@ -12,12 +12,7 @@
                 "__GNUC__"
             ],
             "includePath": [
-                "${workspaceFolder}/include/ginclude-9.2.0",
-                "${glibcInlucdePath}/include",
-                "${glibcInlucdePath}/sysdeps/generic",
-                "${glibcInlucdePath}/sysdeps/x86",
-                "${glibcInlucdePath}/sysdeps/x86_64",
-                "${glibcInlucdePath}",
+                "${libcInlucdePath}",
                 "${libcxxInlucdePath}",
                 "${cudaIncludePath}"
             ],
