@@ -2,6 +2,8 @@
 
 CUDA programming with autocompletion, error-checking, jump-to-definition and quick documentation!
 
+This repo provides basic functionalities for **editing** `*.cu` and `*.cuh` files without the need to install any SDKs. If you want to compile, run, and/or debug CUDA programs, please install the CUDA Toolkit from [here](https://developer.nvidia.com/cuda-toolkit).
+
 ## VSCode
 
 ### Usage
