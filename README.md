@@ -6,6 +6,8 @@ This repo provides basic functionalities for **editing** `*.cu` and `*.cuh` file
 
 If you want to compile, run, and/or debug CUDA programs, please install the CUDA Toolkit from [here](https://developer.nvidia.com/cuda-toolkit).
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+ 
 ## VSCode
 
 ### Usage
