@@ -27,6 +27,10 @@ CUDA programming with autocompletion, error-checking, jump-to-definition and qui
 
 ## CLion
 
+### Usage
+
+1. 
+
 ### Features
 
 - Autocomplete 
