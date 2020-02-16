@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.13.2)
 project(CUDA_Progrsamming_Starter_Kit)
 
 set(CUDA_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include/CUDA-10.2")
@@ -17,6 +17,6 @@ include_directories(SYSTEM ${CUDA_INCLUDE_DIR})
 add_compile_definitions(__CUDACC__)
 add_compile_definitions(__GNUC__)
 
-add_executable(example example.cu example.cpp)
+add_executable(example example.cu)
 set_source_files_properties(example.cu PROPERTIES LANGUAGE CXX)
 set_target_properties(example PROPERTIES LINKER_LANGUAGE CXX)
