@@ -33,11 +33,11 @@ If you want to compile, run, and/or debug CUDA programs, please install the CUDA
 
 ### Usage
 
-1. Open the preference and register the file extension `*.cu` and `*.cuh` as C/C++ files
-
-	![image-20200215235421482](assets/image-20200215235421482.png)
+1. Open the preference and register the file extension `*.cu` and `*.cuh` as C/C++ files (See screenshot below)
 
 2. Clone this repo and open it in CLion
+
+	![image-20200215235421482](assets/image-20200215235421482.png)
 
 ### Features
 
