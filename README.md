@@ -13,3 +13,10 @@ CUDA programming with autocompletion, syntax-checking, jump-to-definition and qu
 ### CLion
 
 ## Features
+
+|    Features    |                            VSCode                            |                            CLion                             |
+| :------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  Autocomplete  | ![image-20200215232640853](assets/image-20200215232640853.png) | ![image-20200215232927428](assets/image-20200215232927428.png) |
+| Error Checking |                                                              | ![image-20200215233108863](assets/image-20200215233108863.png) |
+|                |                                                              |                                                              |
+
