@@ -53,3 +53,18 @@ If you want to compile, run, and/or debug CUDA programs, please install the CUDA
 
     ![image-20200215234901712](assets/image-20200215234901712.png)
 
+
+## Known Issues
+
+- Do not support the `<<<`/`>>>` syntax. Everything else is supported. 
+
+## Tests
+
+- Tested on a fresh copy of Windows 10 (with no toolchains)
+
+- Tested on a fresh copy of Ubuntu 19.10 (with no toolchains)
+
+- Tested on macOS Catalina with Apple clang version 11.0.0
+
+- Tested on Windows 10 with MinGW GCC
+
