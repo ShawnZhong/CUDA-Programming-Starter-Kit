@@ -8,6 +8,7 @@ add_definitions(-include ${CUDA_INCLUDE_DIR}/device_launch_parameters.h)
 add_definitions(-include ${CUDA_INCLUDE_DIR}/device_functions.h)
 include_directories(${CUDA_INCLUDE_DIR})
 add_compile_definitions(__CUDACC__)
+add_compile_definitions(__GNUC__)
 
 add_executable(example example.cu)
 set_source_files_properties(example.cu PROPERTIES LANGUAGE CXX)
