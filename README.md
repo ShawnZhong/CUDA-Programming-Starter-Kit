@@ -1,6 +1,6 @@
 # CUDA Progrsamming Starter Kit
 
-CUDA programming with autocompletion, syntax-checking, jump-to-definition and quick documentation!
+CUDA programming with autocompletion, error-checking, jump-to-definition and quick documentation!
 
 ## VSCode
 
@@ -16,6 +16,12 @@ CUDA programming with autocompletion, syntax-checking, jump-to-definition and qu
 
 ### Error Checking
 
+![image-20200215234448029](assets/image-20200215234448029.png)
+
+#### Quick Documentation
+
+![image-20200215234654292](assets/image-20200215234654292.png)
+
 
 ## CLion
 
@@ -26,3 +32,8 @@ CUDA programming with autocompletion, syntax-checking, jump-to-definition and qu
 ### Error Checking
 
 ![image-20200215233108863](assets/image-20200215233108863.png)
+
+#### Quick Documentation
+
+![image-20200215234901712](assets/image-20200215234901712.png)
+
