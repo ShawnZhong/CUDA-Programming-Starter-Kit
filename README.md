@@ -10,30 +10,34 @@ CUDA programming with autocompletion, error-checking, jump-to-definition and qui
 
 2. Clone this repo and open it in VSCode
 
-### Autocomplete 
+### Features
 
-![image-20200215232640853](assets/image-20200215232640853.png)
+- Autocomplete 
 
-### Error Checking
+    ![image-20200215232640853](assets/image-20200215232640853.png)
 
-![image-20200215234448029](assets/image-20200215234448029.png)
+- Error Checking
 
-#### Quick Documentation
+    ![image-20200215234448029](assets/image-20200215234448029.png)
 
-![image-20200215234654292](assets/image-20200215234654292.png)
+- Quick Documentation
+
+    ![image-20200215234654292](assets/image-20200215234654292.png)
 
 
 ## CLion
 
-### Autocomplete 
+### Features
 
-![image-20200215232927428](assets/image-20200215232927428.png)
+- Autocomplete 
 
-### Error Checking
+    ![image-20200215232927428](assets/image-20200215232927428.png)
 
-![image-20200215233108863](assets/image-20200215233108863.png)
+- Error Checking
 
-#### Quick Documentation
+    ![image-20200215233108863](assets/image-20200215233108863.png)
 
-![image-20200215234901712](assets/image-20200215234901712.png)
+- Quick Documentation
+
+    ![image-20200215234901712](assets/image-20200215234901712.png)
 
