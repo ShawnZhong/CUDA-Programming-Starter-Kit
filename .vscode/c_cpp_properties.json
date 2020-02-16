@@ -18,9 +18,7 @@
             ],
             "forcedInclude": [
                 "${libcxxInlucdePath}/cstdlib",
-                "${cudaIncludePath}/cuda_runtime_api.h",
-                "${cudaIncludePath}/device_launch_parameters.h",
-                "${cudaIncludePath}/device_functions.h"
+                "${cudaIncludePath}/cuda_runtime.h"
             ]
         }
     ],
