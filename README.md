@@ -1,4 +1,4 @@
-# CUDA Progrsamming Starter Kit
+# CUDA Programming Starter Kit
 
 CUDA programming with autocompletion, error-checking, jump-to-definition and quick documentation!
 
