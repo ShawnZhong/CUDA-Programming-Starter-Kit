@@ -29,7 +29,11 @@ CUDA programming with autocompletion, error-checking, jump-to-definition and qui
 
 ### Usage
 
-1. 
+1. Open the preference and register the file extension `*.cu` and `*.cuh` as C/C++ files
+
+	![image-20200215235421482](assets/image-20200215235421482.png)
+
+2. Clone this repo and open it in CLion
 
 ### Features
 
