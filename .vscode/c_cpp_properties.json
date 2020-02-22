@@ -1,8 +1,8 @@
 {
     "env": {
         "cudaIncludePath": "${workspaceFolder}/include/CUDA-10.2",
-        "libcxxInlucdePath": "${cudaIncludePath}/cuda/std/detail/libcxx/include",
-        "libcInlucdePath": "${workspaceFolder}/include/musl-libc-1.1.24"
+        "libcxxIncludePath": "${cudaIncludePath}/cuda/std/detail/libcxx/include",
+        "libcIncludePath": "${workspaceFolder}/include/musl-libc-1.1.24"
     },
     "configurations": [
         {
@@ -12,12 +12,12 @@
                 "__GNUC__"
             ],
             "includePath": [
-                "${libcInlucdePath}",
-                "${libcxxInlucdePath}",
+                "${libcIncludePath}",
+                "${libcxxIncludePath}",
                 "${cudaIncludePath}"
             ],
             "forcedInclude": [
-                "${libcxxInlucdePath}/cstdlib",
+                "${libcxxIncludePath}/cstdlib",
                 "${cudaIncludePath}/cuda_runtime.h"
             ]
         }
