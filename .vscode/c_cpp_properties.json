@@ -20,7 +20,8 @@
             "forcedInclude": [
                 "${libcxxIncludePath}/cstdlib",
                 "${cudaIncludePath}/cuda_runtime.h"
-            ]
+            ],
+            "intelliSenseMode": "clang-x64"
         }
     ],
     "version": 4

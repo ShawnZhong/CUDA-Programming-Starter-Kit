@@ -55,7 +55,7 @@ int main() {
   }
 
   int *d_d;
-  cudaMalloc((void *)d_d, n * sizeof(int));
+  cudaMalloc((void **)d_d, n * sizeof(int));
 
   // run version with static shared memory
   cudaMemcpy(d_d, a, n * sizeof(int), cudaMemcpyHostToDevice);
