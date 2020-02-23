@@ -47,7 +47,6 @@ Types:
 #ifdef _MSC_VER
     #include <../ucrt/stddef.h>
 #else
-    #include_next <stddef.h>
 #endif
 #include <__nullptr>
 #endif //__cuda_std__
