@@ -9,7 +9,8 @@
             "name": "CUDA",
             "defines": [
                 "__CUDACC__",
-                "__GNUC__"
+                "__GNUC__",
+                "__CUDA_ARCH__=350"
             ],
             "includePath": [
                 "${libcIncludePath}",
